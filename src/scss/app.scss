@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "jumpinTaimi";
+    src: url("/fonts/jumpinTaimi.eot");
+    src: url("/fonts/jumpinTaimi.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/jumpinTaimi.woff2") format("woff2"), url("/fonts/jumpinTaimi.woff") format("woff"),
+        url("/fonts/jumpinTaimi.ttf") format("truetype"), url("/fonts/jumpinTaimi.svg#CronosPro-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: #fff;
+    cursor: url("../assets/images/mouse.png"), auto;
+    font-family: Menomonia;
+    font-size: 17px;
+    margin: 0;
+    overflow: hidden;
+}

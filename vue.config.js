@@ -1,6 +1,9 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'? '/talk/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/talk/' : '/',
     configureWebpack: {
         devtool: 'source-map'
+    },
+    css: {
+        requireModuleExtension: false
     }
 }
