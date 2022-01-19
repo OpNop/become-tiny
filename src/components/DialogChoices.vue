@@ -27,6 +27,11 @@ export default {
         case "exit":
           this.$emit("exit");
           break;
+        case "heart":
+        case "link":
+          window.open(choice.url);
+          this.$emit("continue", "start");
+          break;
         default:
           console.log("Invalid choice type");
       }
