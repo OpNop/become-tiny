@@ -22,7 +22,7 @@ export default {
     handleClick(choice) {
       switch (choice.type) {
         case "continue":
-          this.$emit("continue", choice.next);
+          this.$emit("continue", choice.next, choice.text);
           break;
         case "exit":
           this.$emit("exit");

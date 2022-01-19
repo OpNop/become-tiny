@@ -1,5 +1,6 @@
 <template>
   <div id="dialogMain">
+    <div id="selectedChoice">{{ selectedChoice }}</div>
     <div id="dialogMessage">{{ storyStep.text }}</div>
     <dialog-choices
       :choices="storyStep.choices"
@@ -24,13 +25,15 @@ export default {
     find_label(label) {
       return this.story.find((step) => step.label == label);
     },
-    goto(label) {
+    goto(label, choice) {
       console.log(`Moving on to ${label}`);
+      this.selectedChoice = choice;
       this.storyStep = this.find_label(label);
     },
   },
   data() {
     return {
+      selectedChoice: "",
       storyStep: {},
       story: Story,
     };
@@ -46,13 +49,21 @@ export default {
   top: 0;
   width: 1024px;
 }
+#selectedChoice {
+  position: relative;
+  top: 60px;
+  font-size: 11pt;
+  left: 195px;
+  height: 11pt;
+}
 #dialogMessage {
   font-size: 12pt;
-  // height: 75px;
-  height: 110px;
+  height: 75px;
   left: 185px;
   position: relative;
-  top: 110px;
+  top: 86px;
   width: 470px;
+  display: flex;
+  align-items: center;
 }
 </style>
