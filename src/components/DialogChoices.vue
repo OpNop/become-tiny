@@ -44,7 +44,7 @@ export default {
   font-size: 12pt;
   font-style: italic;
   height: 200px;
-  left: 220px;
+  left: 210px;
   position: relative;
   top: 120px;
   width: 500px;
