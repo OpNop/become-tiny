@@ -77,6 +77,10 @@
                 "type": "continue",
                 "text": "Got it; if I rep, I will only do it on my Asura.",
                 "next": "joining_3"
+            },
+            {
+                "type": "exit",
+                "text": "Asura creep me out, I'm not even sure why I'm here."
             }
         ]
     },
@@ -88,6 +92,10 @@
                 "type": "continue",
                 "text": "That seems reasonable, whats next?",
                 "next": "joining_4"
+            },
+            {
+                "type": "exit",
+                "text": "I, <insert name here>, am a bookah and do not know how to be nice."
             }
         ]
     },
@@ -99,6 +107,10 @@
                 "type": "continue",
                 "text": "Fine, I wont talk about how horrible Phlunt is.",
                 "next": "joining_5"
+            },
+            {
+                "type": "exit",
+                "text": "B-B-But Councillor Phlunt is a nice guy."
             }
         ]
     },
@@ -107,13 +119,13 @@
         "text": "Last one, I swear! Get it? Because this rule is about swea…oh nevermind. Anyway, I might be a genius progeny, but I am still a progeny and so are other TINY members, so please refrain from swearing; you're better than that Commander.",
         "choices": [
             {
-                "type": "continue",
+                "type": "link",
                 "text": "Nice and simple. I think I can follow these rules.",
-                "next": "joining_6"
+                "url": "https://tinyarmy.org/#join"
             },
             {
                 "type": "exit",
-                "text": "This seems way too hard for me to follow."
+                "text": "This all seems way too hard for my bookah brain to follow."
             }
         ]
     },
