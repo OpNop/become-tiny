@@ -7,18 +7,26 @@
       />
     </video>
     <div id="app">
-      <dialog-main />
+      <dialog-main @exit="talking = false" v-show="talking" />
+      <talk-button @click.native="talking = true" v-show="!talking" />
     </div>
   </div>
 </template>
 
 <script>
 import DialogMain from "./components/DialogMain.vue";
+import TalkButton from "./components/TalkButton.vue";
 
 export default {
   name: "App",
   components: {
     DialogMain,
+    TalkButton,
+  },
+  data() {
+    return {
+      talking: true,
+    };
   },
 };
 </script>
