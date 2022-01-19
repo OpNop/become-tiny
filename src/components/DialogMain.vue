@@ -5,7 +5,8 @@
     <dialog-choices
       :choices="storyStep.choices"
       @continue="goto"
-      @exit="goto('start')"
+      @exit="exit"
+      @back="goto('start')"
     />
   </div>
 </template>
@@ -24,6 +25,10 @@ export default {
   methods: {
     find_label(label) {
       return this.story.find((step) => step.label == label);
+    },
+    exit() {
+      this.storyStep = this.find_label("start");
+      this.$emit("exit");
     },
     goto(label, choice) {
       console.log(`Moving on to ${label}`);

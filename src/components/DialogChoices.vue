@@ -24,6 +24,9 @@ export default {
         case "continue":
           this.$emit("continue", choice.next, choice.text);
           break;
+        case "back":
+          this.$emit("back");
+          break;
         case "exit":
           this.$emit("exit");
           break;
